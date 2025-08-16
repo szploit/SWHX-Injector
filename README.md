@@ -6,7 +6,13 @@ Useful for injecting dlls using SetWindowHookEx
 
 Add a NextHook function to your dll like this 
 
-```extern "C" __declspec(dllexport) LRESULT NextHook(int code, WPARAM wParam, LPARAM lParam) { return CallNextHookEx(nullptr, code, wParam, lParam); }```
+```
+extern "C" __declspec(dllexport)
+LRESULT NextHook(int code, WPARAM wParam, LPARAM lParam)
+{
+    return CallNextHookEx(nullptr, code, wParam, lParam);
+}
+```
 
 
 Drag the dll into the Injector's Directory
