@@ -16,4 +16,4 @@ LRESULT NextHook(int code, WPARAM wParam, LPARAM lParam)
 
 
 Drag the dll into the Injector's Directory
-Make sure the dll's name matches the dll's name in the Injector, then open the injector and wait for it to inject
+Make sure the dll's name matches the dll's name in the Injector, then open the injector and wait for it to inject.
